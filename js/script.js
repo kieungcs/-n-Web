@@ -67,10 +67,10 @@ $(".hero_carosel").on('change.owl.carousel', function(event) {
         }
     })
 
-    $('.pr-item').owlCarousel({
+    $('.prtab').owlCarousel({
         loop:true,
         margin:24,
-        nav:false,
+        nav:true,
         responsive:{
             0:{
                 items:2
@@ -101,6 +101,44 @@ $(".hero_carosel").on('change.owl.carousel', function(event) {
         }
     })
 
+    $('.blog-slide').owlCarousel({
+        loop:true,
+        margin:24,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+
+    $('.brand-slider').owlCarousel({
+        loop:true,
+        margin:50,
+        nav:false,
+        dots:false,
+        center:true,
+        autoplay:true,
+        autoplayTimeout:1000,
+        responsive:{
+            0:{
+                items: 4
+            },
+            600:{
+                items: 6
+            },
+            1000:{
+                items: 8
+            }
+        }
+    })
+
     $('.similar-slide').owlCarousel({
         loop:true,
         margin:10,
@@ -124,7 +162,7 @@ $(".hero_carosel").on('change.owl.carousel', function(event) {
     var aboutw=$('.about-img').width();
     $('.about-img').height(aboutw/1.44);
 
-    var prw=$('.pr-img').width();
+    var prw=$('.pr-item').width();
     $('.pr-img').height(prw);
 
     var cbw=$('.cms-banner-img').width();
@@ -136,8 +174,11 @@ $(".hero_carosel").on('change.owl.carousel', function(event) {
     var similarw=$('.similar-img').width();
     $('.similar-img').height(similarw/1.52);
 
-    var prnw=$('.pr-name').width();
-    $('.pr-name').height(prnw/2.5);
+    var pri=prw + 110;
+    $('.pr-item').height(pri);
+
+    var videoi=$('.video-img').width();
+    $('.video-img').height(videoi/2.44)
 });
 document.addEventListener('click',function(e){
     // Hamburger menu
@@ -153,11 +194,8 @@ $(window).resize(function(){
     var aboutw=$('.about-img').width();
     $('.about-img').height(aboutw/1.44);
 
-    var prw=$('.pr-img').width();
+    var prw=$('.pr-item').width();
     $('.pr-img').height(prw);
-
-    var prnw=$('.pr-name').width();
-    $('.pr-name').height(prnw/2.5);
 
     var cbw=$('.cms-banner-img').width();
     $('.cms-banner-img').height(cbw*1.25)
@@ -168,6 +206,11 @@ $(window).resize(function(){
     var similarw=$('.similar-img').width();
     $('.similar-img').height(similarw/1.52);
 
+    var pri=prw + 110;
+    $('.pr-item').height(pri);
+
+    var videoi=$('.video-img').width();
+    $('.video-img').height(videoi/2.44)
 })
 
 $('#btn-nav').click(function(){
@@ -177,20 +220,37 @@ $('#btn-close-nav').click(function(){
     $('#menu').toggle('slide')
 })
 
-jQuery(function ($) {
-    $('#myFlipper').flipper('init');
-    $('#modalFlipper').flipper('init');
+window.addEventListener("resize", function() {
+    "use strict"; window.location.reload(); 
   });
-  
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36251023-1']);
-    _gaq.push(['_setDomainName', 'jqueryscript.net']);
-    _gaq.push(['_trackPageview']);
-  
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+
+  function makeTimer() {
+
+	
+    var endTime = new Date("30 april 2024 23:59:59 GMT+07:00");			
+        endTime = (Date.parse(endTime) / 1000);
+
+        var now = new Date();
+        now = (Date.parse(now) / 1000);
+
+        var timeLeft = endTime - now;
+
+        var days = Math.floor(timeLeft / 86400); 
+        var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+        var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+        var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+        if (hours < "10") { hours = "0" + hours; }
+        if (minutes < "10") { minutes = "0" + minutes; }
+        if (seconds < "10") { seconds = "0" + seconds; }
+
+        $("#days").html(days + "<span>Ngày</span>");
+        $("#hours").html(hours + "<span>Giờ</span>");
+        $("#minutes").html(minutes + "<span>Phút</span>");
+        $("#seconds").html(seconds + "<span>Giây</span>");		
+
+}
+
+setInterval(function() { makeTimer(); }, 1000);
 
 

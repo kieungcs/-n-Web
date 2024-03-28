@@ -249,6 +249,34 @@ a
     line-height: 1.2vw;
     border-radius: 0.3vw;
 }
+/*------------------------------------------------------------------- CSS FOR FOOTER -----------------------------------------------------------*/
+.footer {background-color: #1D1D1F; padding: 35px 0; color: #ccc;}
+.footer .footer-title {color: #fff; font-size: 15px; margin-bottom: 33px; font-family: inter-md; font-weight: normal}
+.footer .info p {font-size: 13px;}
+.footer .info p span a{color: var(--bs-secondary);}
+.footer .follow .social {display: flex;}
+.footer .follow .social li {
+    margin-right: 10px; 
+    width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+    font-size: 13px;}
+.footer .follow .social li a {color: #fff;}
+.footer .follow .social li:nth-child(1) {background-color: #0866FF}
+.footer .follow .social li:nth-child(2) {background-color: #000}
+.footer .follow .social li:nth-child(3) {background-image: linear-gradient(45deg, #FEC900, #FF4C07, #FD03C9, #8509FC)}
+.footer .follow .social li:nth-child(4) {background-color: #B70000}
+.footer .follow .social li:nth-child(5) {background-color: #1D9BF0}
+.footer .follow p {font-family: inter-md; font-size: 13px; font-weight: normal; margin-top: 26px; color: #fff;}
+.footer .about ul li a {color: #ccc; font-size: 13px;}
+.footer .about ul li {margin-bottom: 7px;}
+.footer .about ul li a:hover {color: var(--bs-secondary); transition: all 0.1s;}
+.footer .policy ul li a {color: #ccc; font-size: 13px;}
+.footer .policy ul li {margin-bottom: 7px;}
+.footer .policy ul li a:hover {color: var(--bs-secondary); transition: all 0.1s;}
 /*------------------------------------------------------------------- CSS FOR INDEX.HTML -----------------------------------------------------------*/
 .section-title
 {
@@ -296,26 +324,29 @@ a
 {
     justify-content: center;
 }
-.product .nav a
-{
-    color: #1D1D1F;
-}
 .pr-img
 {
     box-shadow: 2px 2px 2px 0 #ccc;
     position: relative;
     border: 1px solid #ccc;
 }
-.pr-img img {width: 70%;}
+.product .owl-carousel .owl-item img
+{
+    width: 70%;
+}
 .img1
 {
     position: absolute;
-    opacity: 1;   
+    opacity: 1;
+    top: 15%;
+    left: 15%;   
 }
 .img2
 {
     position: absolute;
     opacity: 0;
+    top: 15%;
+    left: 15%; 
 }
 .tag-sale
 {
@@ -327,7 +358,7 @@ a
     padding: 3px 7px;
     font-size: 13px;
 }
-.item .rating
+.rating
 {
     color: #F7BB03;
     position: absolute;
@@ -338,15 +369,15 @@ a
     opacity: 0;
     text-align: center;
 }
-.item .list-icon
+.list-icon
 {
     position: absolute;
     top: 5px;
     right: 5px;
     opacity: 0;
 }
-.item .list-icon li {margin-bottom: 5px;}
-.item .list-icon li a
+.list-icon li {margin-bottom: 5px;}
+.list-icon li a
 {
     width: 30px;
     height: 30px;
@@ -358,81 +389,52 @@ a
     display: block;
     color: #777;
 }
-.item .pr-name
-{
-    position: relative;
-    width: 100%;
-    min-height: 50px;
-}
-.item .pr-name h6
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: inter-md;
-    font-weight: normal;
-}
-.item .pr-name .price 
-{
-    position: absolute;
-    left: 0;
-    top: 50px;
-    opacity: 1;
-}
-.item .pr-name .btn-primary
-{
-    position: absolute;
-    top: 60px;
-    opacity: 0;
-    left: 0; right: 0;
-    width: 100px;
-    margin: 0 auto;
-}
 .old-price
 {
     color: #777;
     text-decoration: line-through;
     padding-left: 30px;
 }
-.item .list-icon li a:hover
+.list-icon li a:hover
 {
     background-color: #047103;
     color: #fff;
 }
-.item:hover .img1
+.pr-item:hover .img1
 {
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
-.item:hover .img2
+.pr-item:hover .img2
 {
     opacity: 1;
     transition: all 0.5s ease-in-out;
 }
-.item:hover .rating
+.pr-item:hover .rating
 {
     opacity: 1;
     transition: all 0.5s ease-in-out;
 }
-.item:hover .list-icon
+.pr-item:hover .list-icon
 {
     opacity: 1;
     transition: all 0.5s ease-in-out;
 }
-.item:hover .price
+.pr-btn {opacity: 0; background-color: #fff;}
+.pr-item:hover .pr-btn{margin-top: -45px; opacity: 1;transition: all 0.3s ease-out}
+.pr-btn:hover .btn
 {
-    opacity: 0;
-    transition: all 0.1s ease-in-out;
-}
-.item:hover .btn-primary
-{
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
+    background-color: #fff;
+    border: 1px solid #047103;
+    color: #1D1D1F;
+    transition: all 0.3s linear;
 }
 /* CMS Banner */
 .cms-banner .cms-banner-img
 {
     position: relative;
+    overflow: hidden;
+    border-radius: 15px;
 }
 .cms-banner .cms-banner-img img
 {
@@ -462,7 +464,7 @@ a
 .cms-banner .cms-banner-img .cms2 p
 {
     position: absolute;
-    top: 10px;
+    top: 80px;
     left: 10px;
     color: #fff;
     font-family: inter-md;
@@ -470,12 +472,17 @@ a
 .cms-banner .cms-banner-img .cms2 h4
 {
     position: absolute;
-    top: 60px;
+    top: 15px;
     left: 10px;
     color: #fff;
     font-family: inter-md;
     font-weight: normal;
     font-size: 31px;
+}
+.cms-banner .cms-banner-img:hover img
+{
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
 }
 /* FLASH SALE */
 .flash-sale .section-title
@@ -490,6 +497,139 @@ a
     height: 2px;
     background-color: #047103;
     margin: 0;
+}
+.flash-sale .owl-carousel .owl-item img
+{
+    width: 70%;
+}
+/* countdown */
+#timer
+{
+	width:200px;
+}
+#timer ul
+{
+	list-style:none;
+	display:flex;	
+	padding:40px 0 22px 0;
+	margin:0;
+}
+#timer ul li
+{	
+	margin:10px;
+}
+#timer span {
+  display: block;
+  font-size: 10px;
+  color: white;
+}
+
+#days, #hours, #minutes, #seconds {
+  font-size: 20px;
+  color: #fff;
+  width:40px;
+  height:62px;
+  background-color:#000;  
+  padding-top:10px;
+  box-sizing:border-box;
+  text-align:center;
+}
+/* VIDEO */
+.video h4 {margin: 70px 0 15px 0; text-align: center; font-family: lemajor; font-weight: bold;}
+.video p {margin-top: 0; padding: 0 18vw; text-align: center; color: #777;}
+.video .btn-more 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.video .video-img {position: relative; border-radius: 25px;}
+.video .video-img img {border-radius: 25px; position: absolute; top: 0; left: 0; width: 100%;}
+.video .video-img #play img {position: absolute; top: 40%; left: 45%; margin: 0; width: 10%; }
+/* TUTORIAL */
+.tutorial h4 {margin: 70px 0 30px 0; text-align: center;}
+.tutorial .step 
+{
+    border-radius: 5px;
+    color: #fff;
+    font-family: inter-md;
+    margin: 0 35% 20px 35%;
+}
+.tutorial .tut-img
+{
+    position: relative;
+    display: block;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 35% 20px 35%;
+}
+.tutorial .tut-img .img1 {width: 50px; height: 50px; position: absolute; top: 25%; left: 25%; opacity: 1;}
+.tutorial .tut-img .img2 {width: 50px; height: 50px; position: absolute; top: 25%; left: 25%; opacity: 0;}
+.tutorial .tut-img:hover
+{
+    background-color: #047103;
+}
+.tutorial .tut-img:hover .img1
+{
+    opacity: 0;
+}
+.tutorial .tut-img:hover .img2
+{
+    opacity: 1;
+}
+.tutorial ul li a
+{
+    font-family: inter-md;
+    font-size: 18px;
+}
+.tutorial .tut-caption
+{
+    margin-top: 15px;
+    font-size: 15px;
+    color: #777;
+}
+.tutorial .procedure {padding: 15px 12px;}
+/* .tutorial .dash {position: relative;}
+.tutorial .dash::after
+{
+    content: "---------------------";
+    position: absolute;
+    top: 15px; right: -75px;
+} */
+.bg-step1 {background-color: #DDB4A8;}
+.bg-step2 {background-color: #C88F7E;}
+.bg-step3 {background-color: #995F4D;}
+.bg-step4 {background-color: #703523;}
+
+/* BLOG */
+.blog .blog-slide .item .blog-img {border-radius: 0;}
+.blog .blog-slide .item .blog-img .date
+{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+.blog .blog-slide .item .blog-img .date .day {font-size: 20px; font-weight: bold; margin: 10px 0 0 0;}
+.blog .blog-slide .item .blog-img .date .month {font-size: 13px; padding: 7px 5px; background-color: #047103; margin: 0; color: #fff; border-radius: 0 0 5px 5px;}
+.blog .blog-slide .item .view 
+{
+    font-size: 13px;
+    color: #777;
+}
+.blog .blog-slide .item p {margin: 10px 0;}
+.blog .blog-slide .item a {font-family: inter-md; font-size: 18px; }
+.blog .blog-slide .item .blog-body-caption {font-size: 14px; color: #777; margin-top: 10px;}
+.blog .blog-slide .item a:hover
+{
+    color: #047103;
+    transition: all 0.5s ease-out;
 }
 @media screen and (max-width: 1399px) 
 {
@@ -680,9 +820,9 @@ a
 }
 
 /*------------------------------------------------------------------------ CSS FOR BREADCRUMB -------------------------------------------------------------*/
-.breadcrumb .breadcrumb-item a
+.breadcrumb-item.active
 {
-    text-decoration: underline;
+    color: #047103;
 }
 .bread-banner h3
 {
@@ -754,7 +894,7 @@ a
 .tgb-content a {font-size: 14px; font-style: italic; margin: 5px;}
 .tgb-content a:hover {color: blue; transition: all 0.1s;}
 /*-------------------------------------------------------------------------- CSS FOR BLOG-CONTENT.HTML ---------------------------------------------------------------*/
-.blog-writting {line-height: 26px; color: #333;}
+..blog-writting {line-height: 26px; color: #333;}
 .blog-writting .line
 {
     width: 140px;
@@ -851,10 +991,6 @@ a
     font-size: 13px;
     font-style: italic;
 }
-
-* {
-    font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
-  }
   
   @keyframes fadeIn {
     from {
