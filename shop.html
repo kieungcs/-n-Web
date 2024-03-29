@@ -21,43 +21,1703 @@
             </div>
         </div>
     </div>
-    <div class="menubar container my-3" id="menubar">
-        <div class="row">
-            <div class="col-6 logo">
-                <img src="images/logo.png" alt="">
-            </div>
-            <div class="col-6 text-end">
-                <button class="btn" id="btn-nav"><i class="fa-solid fa-bars"></i></button>
-            </div>
-        </div>
-    </div>
-    <nav class="container menu" id="menu">
-        <div class="btn-close btn-close-nav" id="btn-close-nav"></div>
-        <div class="row">
-            <div class="col-lg-2 logo"><img src="images/logo.png" alt=""></div>
-            <div class="col-lg-8 nav-main">
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li>
-                        <a href="#">Cửa hàng</a>
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                <div class="hamburger-toggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
                     </li>
-                    <li><a href="#">Danh mục</a></li>
-                    <li><a href="#">Sản phẩm</a></li>
-                    <li><a href="#">Top deals</a></li>
-                    <li><a href="#">Khác</a></li>
+                    <li class="drop-shop nav-item dropdown dropdown-mega position-static">
+                        <a class="nav-link dropdown-toggle" href="shop.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Cửa hàng</a>
+                        <div class="dropdown-menu shadow mt-4">
+                        <div class="mega-content px-4">
+                            <div class="container-fluid">
+                            <div class="row">
+                                <ul class="type-pr col-md-6 col-lg-3 d-flex flex-column py-3">
+                                    <li><h6 class="text-uppercase">Các loại sản phẩm</h6></li>
+                                    <li><a href="#" class="dropdown-item">Chăm sóc cơ thể</a></li>
+                                    <li><a href="#" class="dropdown-item">Chăm sóc da mặt</a></li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Chăm sóc tóc
+                                            <span class="text-secondary tag">NEW</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Chăm sóc răng miệng</a></li>
+                                    <li><a href="#" class="dropdown-item">Khăn giấy - bông tẩy trang</a></li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Vệ sinh phụ nữ
+                                            <span class="tag text-success">HOT</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Chăm sóc bé</a></li>
+                                </ul>
+                                <ul class="only-here col-md-6 col-lg-3 d-flex flex-column py-3">
+                                    <li><h6 class="text-uppercase">chỉ có tại beautify</h6></li>
+                                    <li><a href="#" class="dropdown-item">Judy doll</a></li>
+                                    <li><a href="#" class="dropdown-item">Oriframe</a></li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Space Lady <span class="tag text-bg-secondary text-secondary">NEW</span></a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Perfect Diary</a></li>
+                                    <li><a href="#" class="dropdown-item">Naturies</a></li>
+                                </ul>
+                                <div class="col-md-2 py-5 drop-img1">
+                                    <img src="images/shop-banner-1.jpg" alt="" class="w-100">
+                                </div>
+                                <div class="col-md-4 drop-img2 py-5">
+                                    <img src="images/shop-banner-2.jpg" alt="" class="w-100">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="drop-cat nav-item dropdown dropdown-mega position-static">
+                        <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Danh mục <span class="text-bg-secondary text-secondary tag">SALE</span></a>
+                        <div class="dropdown-menu shadow mt-4">
+                        <div class="mega-content px-4">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <ul class="col-md-6 col-lg-4 d-flex flex-column my-3">
+                                                <li><h6>Serum</h6></li>
+                                                <li><a href="#" class="dropdown-item">Trị mụn</a></li>
+                                                <li><a href="#" class="dropdown-item">Sáng da</a></li>
+                                                <li><a href="#" class="dropdown-item">Cấp ẩm</a></li>
+                                                <li><a href="#" class="dropdown-item">Ngăn ngừa lão hóa</a></li>
+                                            </ul>
+                                            <ul class="col-md-6 col-lg-4 d-flex flex-column my-3">
+                                                <li><h6>Che khuyết điểm</h6></li>
+                                                <li><a href="#" class="dropdown-item">Dạng kem</a></li>
+                                                <li><a href="#" class="dropdown-item">Bảng triệt sắc</a></li>
+                                                <li><a href="#" class="dropdown-item">Dạng bột</a></li>
+                                            </ul>
+                                            <ul class="col-md-6 col-lg-4 d-flex flex-column my-3">
+                                                <li><h6>Creams</h6></li>
+                                                <li><a href="#" class="dropdown-item">Sữa rửa mặt</a></li>
+                                                <li><a href="#" class="dropdown-item">Kem dưỡng ẩm</a></li>
+                                                <li><a href="#" class="dropdown-item">Dưỡng da ban đêm</a></li>
+                                                <li><a href="#" class="dropdown-item">Tinh chất massage</a></li>
+                                            </ul>
+                                            <ul class="col-md-6 col-lg-4 d-flex flex-column my-3">
+                                                <li><h6>Chăm sóc tóc</h6></li>
+                                                <li><a href="#" class="dropdown-item">Dầu gội</a></li>
+                                                <li><a href="#" class="dropdown-item">Dầu xả</a></li>
+                                                <li><a href="#" class="dropdown-item">Kem ủ tóc</a></li>
+                                                <li><a href="#" class="dropdown-item">Thuốc nhuộm</a></li>
+                                            </ul>
+                                            <ul class="col-md-6 col-lg-4 d-flex flex-column my-3">
+                                                <li><h6>Khử mùi</h6></li>
+                                                <li><a href="#" class="dropdown-item">Dành cho nam</a></li>
+                                                <li><a href="#" class="dropdown-item">Dành cho nữ</a></li>
+                                            </ul>
+                                            <ul class="col-md-6 col-lg-4 d-flex flex-column my-3">
+                                                <li><h6>Trang điểm</h6></li>
+                                                <li><a href="#" class="dropdown-item">Dành cho mặt</a></li>
+                                                <li><a href="#" class="dropdown-item">Dành cho môi</a></li>
+                                                <li><a href="#" class="dropdown-item">Dành cho mắt</a></li>
+                                                <li><a href="#" class="dropdown-item">Phụ kiện make-up</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 drop-spbc">
+                                        <h6 class="text-center py-3">Sản phẩm bán chạy</h6>
+                                        <div class="row justify-content-around">
+                                            <div class="col-10 col-xl-5 bg-white drop-spbc-item my-2">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="images/14_02-300x300.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    <div class="col-7 drop-spbc-caption">
+                                                        <a href="#">Overnight Glow Dark Spot Sleeping Cream 50ml</a>
+                                                        <p>169.000 - 199.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 col-xl-5 bg-white drop-spbc-item my-2">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="images/17-300x300.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    <div class="col-7 drop-spbc-caption">
+                                                        <a href="#">Overnight Glow Dark Spot Sleeping Cream 50ml</a>
+                                                        <p>169.000 - 199.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 col-xl-5 bg-white drop-spbc-item my-2">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="images/19-300x300.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    <div class="col-7 drop-spbc-caption">
+                                                        <a href="#">Overnight Glow Dark Spot Sleeping Cream 50ml</a>
+                                                        <p>169.000 - 199.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 col-xl-5 bg-white drop-spbc-item my-2">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="images/21-300x300.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    <div class="col-7 drop-spbc-caption">
+                                                        <a href="#">Overnight Glow Dark Spot Sleeping Cream 50ml</a>
+                                                        <p>169.000 - 199.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="drop-pr nav-item dropdown dropdown-mega position-static">
+                        <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-bs-auto-close="outside">Sản phẩm <span class="tag text-success text-bg-success">HOT</span></a>
+                        <div class="dropdown-menu shadow">
+                            <div class="mega-content">
+                                <div class="container">
+                                    <div class="row">
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs mt-3">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-bs-toggle="tab" href="#serum">Serum</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#cream">Kem duõng da</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#makeup">Trang điểm</a>
+                                            </li>
+                                        </ul>
+  
+                                        <!-- Tab panes -->
+                                        <div class="tab-content mt-4">
+                                            <div class="tab-pane container active" id="serum">
+                                                <div class="owl-carousel owl-theme nav-prtab">
+                                                    <div class="item">
+                                                        <div class="primg">
+                                                            <img src="images/pr-7.jpg" alt="" class="img1">
+                                                            <img src="images/24_02-300x300.jpg" alt="" class="img2">
+                                                            <div class="tag-sale">- 14%</div>
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star-half-alt"></i>
+                                                            </div>
+                                                            <ul class="list-icon">
+                                                                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <a href="product.html" class="col-12 pr-name">Kem dưỡng da ban ngày Sunday Riley</a>
+                                                            <div class="col-12 d-flex pr-price justify-content-center">
+                                                                <p class="new-price">99.000</p>
+                                                                <p class="old-price">299.000</p>
+                                                            </div>
+                                                            <div class="col-12 pr-btn text-center">
+                                                                <button class="btn btn-primary">Mua Ngay</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                                <div class="primg">
+                                                            <img src="images/14-300x300.jpg" alt="" class="img1">
+                                                            <img src="images/14_02-300x300.jpg" alt="" class="img2">
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <ul class="list-icon">
+                                                                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <a href="product.html" class="col-12 pr-name">Tinh chất dưỡng trắng da Oskia 30ml</a>
+                                                            <div class="col-12 d-flex pr-price justify-content-center">
+                                                                <p class="new-price">168.000</p>
+                                                            </div>
+                                                            <div class="col-12 pr-btn text-center">
+                                                                <button class="btn btn-primary">Mua Ngay</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                                <div class="primg">
+                                                            <img src="images/09-300x300.jpg" alt="" class="img1">
+                                                            <img src="images/09_02-300x300.jpg" alt="" class="img2">
+                                                            <div class="tag-sale">- 45%</div>
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <ul class="list-icon">
+                                                                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <a href="product.html" class="col-12 pr-name">Serum AHA The Ordinary giảm mụn</a>
+                                                            <div class="col-12 d-flex pr-price justify-content-center">
+                                                                <p class="new-price">399.000</p>
+                                                                <p class="old-price">768.000</p>
+                                                            </div>
+                                                            <div class="col-12 pr-btn text-center">
+                                                                <button class="btn btn-primary">Mua Ngay</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                                <div class="primg">
+                                                            <img src="images/13-300x300.jpg" alt="" class="img1">
+                                                            <img src="images/13_02-300x300.jpg" alt="" class="img2">
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-regular fa-star"></i>
+                                                            </div>
+                                                            <ul class="list-icon">
+                                                                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <a href="product.html" class="col-12 pr-name">Kem lót Good Genes - Sunday Riley</a>
+                                                            <div class="col-12 d-flex pr-price justify-content-center">
+                                                                <p class="new-price">469.000</p>
+                                                            </div>
+                                                            <div class="col-12 pr-btn text-center">
+                                                                <button class="btn btn-primary">Mua Ngay</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                                <div class="primg">
+                                                            <img src="images/15-300x300.jpg" alt="" class="img1">
+                                                            <img src="images/15_02-300x300.jpg" alt="" class="img2">
+                                                            <div class="tag-sale">- 10%</div>
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <ul class="list-icon">
+                                                                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <a href="product.html" class="col-12 pr-name">Serum Sturn 100ml - Tăng cường vitamin C</a>
+                                                            <div class="col-12 d-flex pr-price justify-content-center">
+                                                                <p class="new-price">399.000</p>
+                                                                <p class="old-price">439.000</p>
+                                                            </div>
+                                                            <div class="col-12 pr-btn text-center">
+                                                                <button class="btn btn-primary">Mua Ngay</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                                <div class="primg">
+                                                            <img src="images/17-300x300.jpg" alt="" class="img1">
+                                                            <img src="images/17_02-300x300.jpg" alt="" class="img2">
+                                                            <div class="tag-sale">- 14%</div>
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <ul class="list-icon">
+                                                                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <a href="product.html" class="col-12 pr-name">Kem chống nắng REN SPA++ SPF50+</a>
+                                                            <div class="col-12 d-flex pr-price justify-content-center">
+                                                                <p class="new-price">99.000</p>
+                                                                <p class="old-price">299.000</p>
+                                                            </div>
+                                                            <div class="col-12 pr-btn text-center">
+                                                                <button class="btn btn-primary">Mua Ngay</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                                <div class="primg">
+                                                            <img src="images/18_02-300x300.jpg" alt="" class="img1">
+                                                            <img src="images/16_02-300x300.jpg" alt="" class="img2">
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star-half-alt"></i>
+                                                            </div>
+                                                            <ul class="list-icon">
+                                                                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <a href="product.html" class="col-12 pr-name">Kem dưỡng da ban ngày Sunday Riley</a>
+                                                            <div class="col-12 d-flex pr-price justify-content-center">
+                                                                <p class="new-price">99.000</p>
+                                                                <p class="old-price">299.000</p>
+                                                            </div>
+                                                            <div class="col-12 pr-btn text-center">
+                                                                <button class="btn btn-primary">Mua Ngay</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                                <div class="primg">
+                                                            <img src="images/pr-8.jpg" alt="" class="img1">
+                                                            <img src="images/13_02-300x300.jpg" alt="" class="img2">
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <ul class="list-icon">
+                                                                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <a href="product.html" class="col-12 pr-name">Kem trị mụn hàng ngày Asley Robert</a>
+                                                            <div class="col-12 d-flex pr-price justify-content-center">
+                                                                <p class="new-price">199.000</p>
+                                                            </div>
+                                                            <div class="col-12 pr-btn text-center">
+                                                                <button class="btn btn-primary">Mua Ngay</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                                <div class="primg">
+                                                            <img src="images/son-3ce (2).png" alt="" class="img1">
+                                                            <img src="images/son-3ce.png" alt="" class="img2">
+                                                            <div class="tag-sale">- 21%</div>
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <ul class="list-icon">
+                                                                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <a href="product.html" class="col-12 pr-name">Son thỏi lì 3CE Red Recipe Lip color</a>
+                                                            <div class="col-12 d-flex pr-price justify-content-center">
+                                                                <p class="new-price">69.000</p>
+                                                                <p class="old-price">99.000</p>
+                                                            </div>
+                                                            <div class="col-12 pr-btn text-center">
+                                                                <button class="btn btn-primary">Mua Ngay</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane container fade" id="cream">
+                                                <div class="owl-carousel owl-theme nav-prtab">
+                                                    <div class="item">
+                                                        <div class="primg">
+                                                            <img src="images/son-3ce (2).png" alt="" class="img1">
+                                                            <img src="images/son-3ce.png" alt="" class="img2">
+                                                            <div class="tag-sale">- 21%</div>
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </div>
+                                                            <ul class="list-icon">
+                                                                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                                <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <a href="product.html" class="col-12 pr-name">Son thỏi lì 3CE Red Recipe Lip color</a>
+                                                            <div class="col-12 d-flex pr-price justify-content-center">
+                                                                <p class="new-price">69.000</p>
+                                                                <p class="old-price">99.000</p>
+                                                            </div>
+                                                            <div class="col-12 pr-btn text-center">
+                                                                <button class="btn btn-primary">Mua Ngay</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane container fade" id="makeup">...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="drop-topdeal nav-item dropdown dropdown-mega position-static">
+                        <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Top deals</a>
+                        <div class="dropdown-menu shadow mt-4">
+                          <div class="mega-content px-4">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-6 top-deal-item">
+                                        <h5>Cửa hàng bán</h5>
+                                        <div class="row">
+                                            <div class="col-md-3 col-6">
+                                                <img src="images/01-300x300.jpg" alt="">
+                                                <p class="text-center"><a href="#">Che khuyết điểm</a></p>
+                                            </div>
+                                            <div class="col-md-3 col-6">
+                                                <img src="images/09-300x300.jpg" alt="">
+                                                <p class="text-center"><a href="#">Serum</a></p>
+                                            </div>
+                                            <div class="col-md-3 col-6">
+                                                <img src="images/pr-3.jpg" alt="">
+                                                <p class="text-center"><a href="#">Dưỡng da tay</a></p>
+                                            </div>
+                                            <div class="col-md-3 col-6">
+                                                <img src="images/13-300x300.jpg" alt="">
+                                                <p class="text-center"><a href="#">Kem chống nắng</a></p>
+                                            </div>
+                                            <div class="col-md-3 col-6">
+                                                <img src="images/14-300x300.jpg" alt="">
+                                                <p class="text-center"><a href="#">Toner</a></p>
+                                            </div>
+                                            <div class="col-md-3 col-6">
+                                                <img src="images/pr-7.jpg" alt="">
+                                                <p class="text-center"><a href="#">Kem dưỡng mắt</a></p>
+                                            </div>
+                                            <div class="col-md-3 col-6">
+                                                <img src="images/16_02-300x300.jpg" alt="">
+                                                <p class="text-center"><a href="#">Make-up</a></p>
+                                            </div>
+                                            <div class="col-md-3 col-6">
+                                                <img src="images/21_02-300x300.jpg" alt="">
+                                                <p class="text-center"><a href="#">Nước tẩy trang</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 drop-spbc">
+                                        <h6 class="text-center py-3">Sản phẩm được yêu thích</h6>
+                                        <div class="row justify-content-around">
+                                            <div class="col-10 col-xl-5 bg-white drop-spbc-item my-2">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="images/01-300x300.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    <div class="col-7 drop-spbc-caption">
+                                                        <a href="#">Overnight Glow Dark Spot Sleeping Cream 50ml</a>
+                                                        <p>169.000 - 199.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 col-xl-5 bg-white drop-spbc-item my-2">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="images/09-300x300.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    <div class="col-7 drop-spbc-caption">
+                                                        <a href="#">Overnight Glow Dark Spot Sleeping Cream 50ml</a>
+                                                        <p>169.000 - 199.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 col-xl-5 bg-white drop-spbc-item my-2">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="images/15_02-300x300.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    <div class="col-7 drop-spbc-caption">
+                                                        <a href="#">Overnight Glow Dark Spot Sleeping Cream 50ml</a>
+                                                        <p>169.000 - 199.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 col-xl-5 bg-white drop-spbc-item my-2">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="images/23-300x300.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    <div class="col-7 drop-spbc-caption">
+                                                        <a href="#">Overnight Glow Dark Spot Sleeping Cream 50ml</a>
+                                                        <p>169.000 - 199.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 col-xl-5 bg-white drop-spbc-item my-2">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="images/19-300x300.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    <div class="col-7 drop-spbc-caption">
+                                                        <a href="#">Overnight Glow Dark Spot Sleeping Cream 50ml</a>
+                                                        <p>169.000 - 199.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-10 col-xl-5 bg-white drop-spbc-item my-2">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="images/24_02-300x300.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    <div class="col-7 drop-spbc-caption">
+                                                        <a href="#">Overnight Glow Dark Spot Sleeping Cream 50ml</a>
+                                                        <p>169.000 - 199.000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="drop-element nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Khác</a>
+                        <ul class="dropdown-menu shadow">
+                            <li><a href="blog.html" class="dropdown-item">Tin tức - Sự kiện <span class="tag text-secondary text-bg-secondary">NEW</span></a></li>
+                            <li><a href="#" class="dropdown-item">Liên hệ</a></li>
+                            <li><a href="#" class="dropdown-item">Câu hỏi thường gặp</a></li>
+                            <li><a href="#" class="dropdown-item">Chat với shop</a></li>
+                            <li><a href="#" class="dropdown-item">Galerry</a></li>
+                            <li><a href="#" class="dropdown-item">Chương trình khuyến mãi <span class="tag text-success text-bg-success">HOT</span></a></li>
+                            <li><a href="#" class="dropdown-item">Cách mua hàng online</a></li>
+                            <li><a href="#" class="dropdown-item">Thông tin cửa hàng</a></li>
+                            <li><a href="#" class="dropdown-item">Đăng ký thành viên</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </div>
-            <div class="col-lg-2 nav-icon">
-                <ul>
-                    <li><a href="#"><i class="fa-solid fa-search"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
+                <div class="d-flex ms-auto nav-icon">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
-    
 
+    <div class="bg-light py-4">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item active">Cửa hàng</li>
+        </ul>
+        <h4 class="text-center">Cửa Hàng</h4>
+    </div>
+    
+    <main class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 aside">
+                    <div class="row">
+                        <div class="col-12 filter">
+                            <h3>Danh mục sản phẩm</h3>
+                            <div class="filter-line"></div>
+                            <ul class="nav-filter">
+                                <li><a href="#">Tất cả (315)</a></li>
+                                <li><a href="#">Kem che khuyết điểm (12)</a></li>
+                                <li><a href="#">Phấn phủ (10)</a></li>
+                                <li><a href="#">Kem chống nắng (12)</a></li>
+                                <li><a href="#">Serum (24)</a></li>
+                                <li><a href="#">Kem dưỡng ẩm (15)</a></li>
+                                <li><a href="#">Sữa rửa mặt (65)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 filter">
+                            <h3>Danh mục nổi bật</h3>
+                            <div class="filter-line"></div>
+                            <ul class="nav-filter">
+                                <li><a href="#">Tất cả (30)</a></li>
+                                <li><a href="#">Bán chạy (12)</a></li>
+                                <li><a href="#">Hàng mới về (10)</a></li>
+                                <li><a href="#">Khuyến mãi (12)</a></li>
+                                <li><a href="#">Sản phẩm nổi bật (24)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" row">
+                        <div class="col-12 filter">
+                            <h3>Danh mục nổi bật</h3>
+                            <div class="filter-line"></div>
+                            <div class=" row">
+                                <input type="checkbox" class="cb">
+                                <input type="checkbox" class="cb">
+                                <input type="checkbox" class="cb">
+                                <input type="checkbox" class="cb">
+                                <input type="checkbox" class="cb">
+                                <input type="checkbox" class="cb">
+                                <input type="checkbox" class="cb">
+                                <input type="checkbox" class="cb">
+                                <input type="checkbox" class="cb">
+                                <input type="checkbox" class="cb">
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                    <div class="row">
+                        <div class="col-12 filter">
+                            <h3>Lọc theo giá</h3>
+                            <div class="filter-line"></div>
+                            <ul class="nav-filter">
+                                <li><a href="#">Tất cả</a></li>
+                                <li><a href="#">0 - 100.000</a></li>
+                                <li><a href="#">101.000 - 200.000</a></li>
+                                <li><a href="#">201.000 - 500.000</a></li>
+                                <li><a href="#">501.000 - 700.000</a></li>
+                                <li><a href="#">> 700.000</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 filter">
+                            <h3>Lọc theo đánh giá</h3>
+                            <div class="filter-line"></div>
+                            <ul class="star-filter">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        (13)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star text-gray"></i>
+                                        (11)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        (0)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        (0)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        (0)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 shop-main mt-3">
+                    <div class="row">
+                        <div class="sort mb-3">
+                            <p class="m-2">Hiển thị 1-16/315 kết quả</p>
+                            <div class="d-flex sort-item">
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-sort dropdown-toggle" data-bs-toggle="dropdown">
+                                        Sắp xếp theo mặc định
+                                    </button>
+                                    <ul class="dropdown-menu p-2">
+                                        <li><a class="dropdown-item" href="#">Sắp xếp theo tên</a></li>
+                                        <li><a class="dropdown-item" href="#">Sắp xếp theo giá</a></li>
+                                        <li><a class="dropdown-item" href="#">Sắp xếp theo lượt yêu thích</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <button class="btn btn-grid nav-link active" data-bs-toggle="tab" data-bs-target="#grid">
+                                            <img src="images/grid (1) 1.png" alt="">
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="btn btn-line nav-link" data-bs-toggle="tab" data-bs-target="#line">
+                                            <img src="images/menu.png" alt="">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab panes -->
+                    <div class="row mt-3">
+                        <div class="tab-content">
+                            <div class="tab-pane container active" id="grid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/23-300x300.jpg" alt="" class="img1">
+                                                <img src="images/23_02-300x300.jpg" alt="" class="img2">
+                                                <div class="tag-sale">- 14%</div>
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-alt"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem dưỡng da ban ngày Sunday Riley</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">99.000</p>
+                                                    <p class="old-price">299.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/14-300x300.jpg" alt="" class="img1">
+                                                <img src="images/14_02-300x300.jpg" alt="" class="img2">
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Tinh chất dưỡng trắng da Oskia 30ml</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">168.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/09-300x300.jpg" alt="" class="img1">
+                                                <img src="images/09_02-300x300.jpg" alt="" class="img2">
+                                                <div class="tag-sale">- 45%</div>
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Serum AHA The Ordinary giảm mụn</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">399.000</p>
+                                                    <p class="old-price">768.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/13-300x300.jpg" alt="" class="img1">
+                                                <img src="images/13_02-300x300.jpg" alt="" class="img2">
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem lót Good Genes - Sunday Riley</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">469.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/15-300x300.jpg" alt="" class="img1">
+                                                <img src="images/15_02-300x300.jpg" alt="" class="img2">
+                                                <div class="tag-sale">- 10%</div>
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Serum Sturn 100ml - Tăng cường vitamin C</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">399.000</p>
+                                                    <p class="old-price">439.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/17-300x300.jpg" alt="" class="img1">
+                                                <img src="images/17_02-300x300.jpg" alt="" class="img2">
+                                                <div class="tag-sale">- 14%</div>
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem chống nắng REN SPA++ SPF50+</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">99.000</p>
+                                                    <p class="old-price">299.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/18_02-300x300.jpg" alt="" class="img1">
+                                                <img src="images/16_02-300x300.jpg" alt="" class="img2">
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-alt"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem dưỡng da ban ngày Sunday Riley</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">99.000</p>
+                                                    <p class="old-price">299.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/pr-8.jpg" alt="" class="img1">
+                                                <img src="images/13_02-300x300.jpg" alt="" class="img2">
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem trị mụn hàng ngày Asley Robert</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">199.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/son-3ce (2).png" alt="" class="img1">
+                                                <img src="images/son-3ce.png" alt="" class="img2">
+                                                <div class="tag-sale">- 21%</div>
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Son thỏi lì 3CE Red Recipe Lip color</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">69.000</p>
+                                                    <p class="old-price">99.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/22-300x300.jpg" alt="" class="img1">
+                                                <img src="images/22_02-300x300.jpg" alt="" class="img2">
+                                                <div class="tag-sale">- 14%</div>
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem chống nắng REN SPA++ SPF50+</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">99.000</p>
+                                                    <p class="old-price">299.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/pr-4.jpg" alt="" class="img1">
+                                                <img src="images/16_02-300x300.jpg" alt="" class="img2">
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-alt"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem dưỡng da ban ngày Sunday Riley</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">99.000</p>
+                                                    <p class="old-price">299.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/19-300x300.jpg" alt="" class="img1">
+                                                <img src="images/19_02-300x300.jpg" alt="" class="img2">
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem trị mụn hàng ngày Asley Robert</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">199.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/pr-1.jpg" alt="" class="img1">
+                                                <img src="images/13_02-300x300.jpg" alt="" class="img2">
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem lót Good Genes - Sunday Riley</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">469.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/pr-2.jpg" alt="" class="img1">
+                                                <img src="images/15_02-300x300.jpg" alt="" class="img2">
+                                                <div class="tag-sale">- 10%</div>
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Serum Sturn 100ml - Tăng cường vitamin C</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">399.000</p>
+                                                    <p class="old-price">439.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/pr-3.jpg" alt="" class="img1">
+                                                <img src="images/17_02-300x300.jpg" alt="" class="img2">
+                                                <div class="tag-sale">- 14%</div>
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem chống nắng REN SPA++ SPF50+</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">99.000</p>
+                                                    <p class="old-price">299.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/category-6-205x205_t.png" alt="" class="img1">
+                                                <img src="images/16_02-300x300.jpg" alt="" class="img2">
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-alt"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem dưỡng da ban ngày Sunday Riley</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">99.000</p>
+                                                    <p class="old-price">299.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/category-4-205x205_t.png" alt="" class="img1">
+                                                <img src="images/16_02-300x300.jpg" alt="" class="img2">
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-alt"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem dưỡng da ban ngày Sunday Riley</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">99.000</p>
+                                                    <p class="old-price">299.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/category-5-205x205_t.png" alt="" class="img1">
+                                                <img src="images/16_02-300x300.jpg" alt="" class="img2">
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-alt"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem dưỡng da ban ngày Sunday Riley</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">99.000</p>
+                                                    <p class="old-price">299.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/category-7-205x205_t.png" alt="" class="img1">
+                                                <img src="images/13_02-300x300.jpg" alt="" class="img2">
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Kem trị mụn hàng ngày Asley Robert</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">199.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                        <div class="shop-pr">
+                                            <div class="spr-img">
+                                                <img src="images/category-2-205x205_t.png" alt="" class="img1">
+                                                <img src="images/son-3ce.png" alt="" class="img2">
+                                                <div class="tag-sale">- 21%</div>
+                                                <div class="rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <ul class="list-icon">
+                                                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa-solid fa-search-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <a href="product.html" class="col-12 pr-name">Son thỏi lì 3CE Red Recipe Lip color</a>
+                                                <div class="col-12 d-flex pr-price justify-content-center">
+                                                    <p class="new-price">69.000</p>
+                                                    <p class="old-price">99.000</p>
+                                                </div>
+                                                <div class="col-12 pr-btn text-center">
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane container fade" id="line">
+                                <div class="row">
+                                    <div class="col-12 mb-4">
+                                        <div class="row shop-pr-line">
+                                            <div class="col-3">
+                                                <div class="spr-img">
+                                                    <img src="images/09-300x300.jpg" alt="" class="img1">
+                                                    <img src="images/09_02-300x300.jpg" alt="" class="img2">
+                                                    <div class="tag-sale">- 14%</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <a href="product.html">Serum trị mụn - giảm nhờn The Ordinary 30ml</a>
+                                                <div class="star my-2">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="caption">Thành phần chứa công thức vitamin và khoáng chất giàu Niacinamide (Vitamin B3) và kẽm. 
+                                                    Đây được xem là một lựa chọn hoàn hảo, cực hợp với cơ địa da Châu Á. 
+                                                    Nó vừa giúp mờ thâm hiệu quả vừa hỗ trợ, ngăn ngừa nguy cơ mụn xuất hiện.
+                                                </p>
+                                                <div class="pr-price d-flex">
+                                                    <p class="new-price text-danger">149.000</p>
+                                                    <p class="old-price">299.000</p>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i></button>
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <div class="row shop-pr-line">
+                                            <div class="col-3">
+                                                <div class="spr-img">
+                                                    <img src="images/13-300x300.jpg" alt="" class="img1">
+                                                    <img src="images/13_02-300x300.jpg" alt="" class="img2">
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <a href="product.html">Good Genes Glycolic Acid Treatment 30ml</a>
+                                                <div class="star my-2">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="caption">Thành phần chứa công thức vitamin và khoáng chất giàu Niacinamide (Vitamin B3) và kẽm. 
+                                                    Đây được xem là một lựa chọn hoàn hảo, cực hợp với cơ địa da Châu Á. 
+                                                    Nó vừa giúp mờ thâm hiệu quả vừa hỗ trợ, ngăn ngừa nguy cơ mụn xuất hiện.
+                                                </p>
+                                                <div class="pr-price d-flex">
+                                                    <p class="new-price text-danger">268.000</p>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i></button>
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <div class="row shop-pr-line">
+                                            <div class="col-3">
+                                                <div class="spr-img">
+                                                    <img src="images/22-300x300.jpg" alt="" class="img1">
+                                                    <img src="images/22_02-300x300.jpg" alt="" class="img2">
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <a href="product.html">Laneige Lip Sleeping Mask Nuit Pure 20g</a>
+                                                <div class="star my-2">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="caption">Thành phần chứa công thức vitamin và khoáng chất giàu Niacinamide (Vitamin B3) và kẽm. 
+                                                    Đây được xem là một lựa chọn hoàn hảo, cực hợp với cơ địa da Châu Á. 
+                                                    Nó vừa giúp mờ thâm hiệu quả vừa hỗ trợ, ngăn ngừa nguy cơ mụn xuất hiện.
+                                                </p>
+                                                <div class="pr-price d-flex">
+                                                    <p class="new-price text-danger">99.000</p>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i></button>
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <div class="row shop-pr-line">
+                                            <div class="col-3">
+                                                <div class="spr-img">
+                                                    <img src="images/23-300x300.jpg" alt="" class="img1">
+                                                    <img src="images/23_02-300x300.jpg" alt="" class="img2">
+                                                    <div class="tag-sale">-10%</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <a href="product.html">Ascorbic Acid 8% + Alpha Arbutin 2% 30ml</a>
+                                                <div class="star my-2">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="caption">Thành phần chứa công thức vitamin và khoáng chất giàu Niacinamide (Vitamin B3) và kẽm. 
+                                                    Đây được xem là một lựa chọn hoàn hảo, cực hợp với cơ địa da Châu Á. 
+                                                    Nó vừa giúp mờ thâm hiệu quả vừa hỗ trợ, ngăn ngừa nguy cơ mụn xuất hiện.
+                                                </p>
+                                                <div class="pr-price d-flex">
+                                                    <p class="new-price text-danger">149.000</p>
+                                                    <p class="old-price">299.000</p>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i></button>
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <div class="row shop-pr-line">
+                                            <div class="col-3">
+                                                <div class="spr-img">
+                                                    <img src="images/19-300x300.jpg" alt="" class="img1">
+                                                    <img src="images/19_02-300x300.jpg" alt="" class="img2">
+                                                    <div class="tag-sale">-22%</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <a href="product.html">Ascorbic Acid 8% + Alpha Arbutin 2% 30ml</a>
+                                                <div class="star my-2">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="caption">Thành phần chứa công thức vitamin và khoáng chất giàu Niacinamide (Vitamin B3) và kẽm. 
+                                                    Đây được xem là một lựa chọn hoàn hảo, cực hợp với cơ địa da Châu Á. 
+                                                    Nó vừa giúp mờ thâm hiệu quả vừa hỗ trợ, ngăn ngừa nguy cơ mụn xuất hiện.
+                                                </p>
+                                                <div class="pr-price d-flex">
+                                                    <p class="new-price text-danger">149.000</p>
+                                                    <p class="old-price">299.000</p>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i></button>
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <div class="row shop-pr-line">
+                                            <div class="col-3">
+                                                <div class="spr-img">
+                                                    <img src="images/14-300x300.jpg" alt="" class="img1">
+                                                    <img src="images/14_02-300x300.jpg" alt="" class="img2">
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <a href="product.html">Ascorbic Acid 8% + Alpha Arbutin 2% 30ml</a>
+                                                <div class="star my-2">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="caption">Thành phần chứa công thức vitamin và khoáng chất giàu Niacinamide (Vitamin B3) và kẽm. 
+                                                    Đây được xem là một lựa chọn hoàn hảo, cực hợp với cơ địa da Châu Á. 
+                                                    Nó vừa giúp mờ thâm hiệu quả vừa hỗ trợ, ngăn ngừa nguy cơ mụn xuất hiện.
+                                                </p>
+                                                <div class="pr-price d-flex">
+                                                    <p class="new-price text-danger">149.000</p>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i></button>
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <div class="row shop-pr-line">
+                                            <div class="col-3">
+                                                <div class="spr-img">
+                                                    <img src="images/21-300x300.jpg" alt="" class="img1">
+                                                    <img src="images/21_02-300x300.jpg" alt="" class="img2">
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <a href="product.html">Ascorbic Acid 8% + Alpha Arbutin 2% 30ml</a>
+                                                <div class="star my-2">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="caption">Thành phần chứa công thức vitamin và khoáng chất giàu Niacinamide (Vitamin B3) và kẽm. 
+                                                    Đây được xem là một lựa chọn hoàn hảo, cực hợp với cơ địa da Châu Á. 
+                                                    Nó vừa giúp mờ thâm hiệu quả vừa hỗ trợ, ngăn ngừa nguy cơ mụn xuất hiện.
+                                                </p>
+                                                <div class="pr-price d-flex">
+                                                    <p class="new-price text-danger">149.000</p>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i></button>
+                                                    <button class="btn btn-primary">Mua Ngay</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="pagination justify-content-center mt-5 mb-3">
+                            <li class="page-item"><a class="page-link disabled" href="javascript:void(0);">Previous</a></li>
+                            <li class="page-item"><a class="page-link active" href="javascript:void(0);">1</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 info mb-3">
+                    <img src="images/dark-logo 1.png" alt="" class="mb-4">
+                    <h6>CÔNG TY TNHH MTV THƯƠNG MẠI & ĐẦU TƯ BEAUTIFY.</h6>
+                    <p>Giấy chứng nhận đăng ký doanh nghiệp số 0310618188, cấp ngày 29.01.2011, nơi cấp Sở kế hoạch và đầu tư TP HCM</p>
+                    <p>
+                        <i class="fa-solid fa-location-dot me-2"></i>
+                        Trụ sở chính: L2-VP-01, 346 Bến Vân Đồn, P1, Q4, TP Hồ Chí Minh, VN
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone me-2"></i>
+                        Hotline: <span><a href="#">19004449</a></span> - Điện thoại: <span><a href="#">02838328272</a></span>
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-3 follow mb-3">
+                    <h6 class="footer-title">Theo dõi chúng tôi</h6>
+                    <ul class="social">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                    <p>Tải app ngay</p>
+                    <a href="#"><img src="images/GooglePlay.png" alt="" class="w-50 mb-1"></a>
+                    <a href="#"><img src="images/appstore.png" alt="" class="w-50"></a>
+                </div>
+                <div class="col-md-6 col-lg-2 about mb-3">
+                    <div class="footer-title">Về chúng tôi</div>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Cẩm nang làm đẹp</a></li>
+                        <li><a href="#">Khách hàng thân thiết</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#">Địa chỉ cửa hàng</a></li>
+                        <li><a href="#">Cho thuê mặt bằng</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 policy mb-3">
+                    <div class="footer-title">Về chính sách</div>
+                    <ul>
+                        <li><a href="#">Chính sách và quy định chung</a></li>
+                        <li><a href="#">Quy định - hình thức thanh toán</a></li>
+                        <li><a href="#">Chính sách vận chuyển</a></li>
+                        <li><a href="#">Chính sách đổi trả hàng</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Quy trình xuất hóa đơn điện tử</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-ui.js"></script>

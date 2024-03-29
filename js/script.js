@@ -1,3 +1,29 @@
+$('.drop-pr').click(function(){
+   
+    $('.nav-prtab').owlCarousel({
+        loop:true,
+        margin:24,
+        nav:true,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+
+    var navpr=$('.item').width();
+    $('.primg').height(navpr);
+    
+    var npri=navpr + 110;
+    $('.item').height(npri);
+})
+
 $(document).ready(function($) 
 {
     var heroSlider = $('.hero_carosel');
@@ -179,6 +205,12 @@ $(".hero_carosel").on('change.owl.carousel', function(event) {
 
     var videoi=$('.video-img').width();
     $('.video-img').height(videoi/2.44)
+
+    var sprw=$('.shop-pr').width();
+    $('.spr-img').height(sprw);
+
+    var spri=sprw + 110;
+    $('.shop-pr').height(spri);
 });
 document.addEventListener('click',function(e){
     // Hamburger menu
