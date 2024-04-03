@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+.zoomWrapper
+{
+	width: 100%;
+	position: relative;
+}
+.zoom-img
+{
+	width: 100%;
+	box-shadow: 0 0 4px 0 #ccc;
+}
+#gallery_01
+{
+	margin-top: 10px;
+}
+.elevatezoom-gallery
+{
+	width: 25%;
+	display: block;
+	float: left;
+	
+}
+.imgthum
+{
+	border: 1px solid #ccc;
+}
+.imgthum.active{
+	border: 2px solid var(--bs-primary);
+}

@@ -3,7 +3,8 @@ $('.drop-pr').click(function(){
     $('.nav-prtab').owlCarousel({
         loop:true,
         margin:24,
-        nav:true,
+        nav:false,
+        dots:false,
         responsive:{
             0:{
                 items:2
@@ -16,14 +17,23 @@ $('.drop-pr').click(function(){
             }
         }
     })
-
-    var navpr=$('.item').width();
-    $('.primg').height(navpr);
-    
-    var npri=navpr + 110;
-    $('.item').height(npri);
 })
-
+$('.drop-shop').click(function(){
+    var bannerh=$('#d-img1').height();
+    $('#d-img2').height(bannerh)
+})
+//TOGGLE CART-SHOPPING
+$('#cart').click(function(){
+    $('.cart-shopping').toggle('blind')
+})
+// TOGGLE FILTER
+$('.filter-icon').click(function(){
+    $('.aside').toggle('drop')
+})
+$('.btn-close-filter').click(function(){
+    $('.aside').toggle('drop')
+})
+//CAROUSEL
 $(document).ready(function($) 
 {
     var heroSlider = $('.hero_carosel');
@@ -182,6 +192,34 @@ $(".hero_carosel").on('change.owl.carousel', function(event) {
         }
     })
 
+    $('#gallery_01').owlCarousel({
+        loop:true,
+        items:5,
+        margin:10,
+        nav: true,
+        dots: false,
+        center:true
+    })
+    $('.compare-slider').owlCarousel({
+        loop:true,
+        margin:22,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:2
+            },
+            1399:{
+                items:3
+            }
+        }
+    })
+
     var catw=$('.cat-img').width();
     $('.cat-img').height(catw);
 
@@ -211,6 +249,22 @@ $(".hero_carosel").on('change.owl.carousel', function(event) {
 
     var spri=sprw + 110;
     $('.shop-pr').height(spri);
+
+//Zoom image 
+    $("#slider").ezPlus({
+        gallery: 'gallery_01',
+        cursor: 'pointer',
+        galleryActiveClass: "active",
+        imageCrossfade: true,
+        loadingIcon: "https://www.elevateweb.co.uk/spinner.gif"
+    });
+
+    $("#slider").bind("click", function (e) {
+        var ez = $('#slider').data('ezPlus');
+        ez.closeAll(); //NEW: This function force hides the lens, tint and window
+        $.fancyboxPlus(ez.getGalleryList());
+        return false;
+    });
 });
 document.addEventListener('click',function(e){
     // Hamburger menu
@@ -245,17 +299,11 @@ $(window).resize(function(){
     $('.video-img').height(videoi/2.44)
 })
 
-$('#btn-nav').click(function(){
-    $('#menu').toggle('slide')
-})
-$('#btn-close-nav').click(function(){
-    $('#menu').toggle('slide')
-})
-
 window.addEventListener("resize", function() {
     "use strict"; window.location.reload(); 
   });
 
+//Đếm ngược flash sale
   function makeTimer() {
 
 	
@@ -285,4 +333,19 @@ window.addEventListener("resize", function() {
 
 setInterval(function() { makeTimer(); }, 1000);
 
+//Tăng giảm số lượng muốn mua
+$('#btnplus').click(function(){
+    var quanty=$('#quanty').val();
+    quanty=parseInt(quanty,10);
+    quanty+=1;
+    $('#quanty').val(quanty);
+  })
+  $('#btnminus').click(function(){
+    var quanty=$('#quanty').val();
+    quanty=parseInt(quanty,10);
+    quanty-=1;
+    if(quanty<1)
+      quanty=1;
+    $('#quanty').val(quanty);
+  })
 
