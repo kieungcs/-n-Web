@@ -1543,6 +1543,15 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+.quantity 
+{
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12px;
+}
+#quanty {border:0;outline:0; width: 30%;}
+#quanty:focus {outline:none!important;}
   
 .summary .pay
 {

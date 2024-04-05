@@ -198,7 +198,6 @@ $(".hero_carosel").on('change.owl.carousel', function(event) {
         margin:10,
         nav: true,
         dots: false,
-        center:true
     })
     $('.compare-slider').owlCarousel({
         loop:true,
@@ -265,6 +264,7 @@ $(".hero_carosel").on('change.owl.carousel', function(event) {
         $.fancyboxPlus(ez.getGalleryList());
         return false;
     });
+
 });
 document.addEventListener('click',function(e){
     // Hamburger menu

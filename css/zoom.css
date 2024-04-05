@@ -25,6 +25,7 @@
 {
 	border: 1px solid #ccc;
 }
-.imgthum.active{
-	border: 2px solid var(--bs-primary);
+.gallery-item .active img {
+	border-bottom: 2px solid var(--bs-primary) !important;
 }
+
