@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/zoom.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -37,15 +40,15 @@
                 <div class="collapse navbar-collapse" id="navbar-content">
                     <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                            <a class="nav-link active hvr-hang" aria-current="page" href="index.html">Trang chủ</a>
                         </li>
                         <li class="drop-shop nav-item dropdown dropdown-mega position-static">
-                            <a class="nav-link dropdown-toggle" href="shop.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Cửa hàng</a>
+                            <a class="nav-link dropdown-toggle hvr-hang" href="shop.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Cửa hàng</a>
                             <div class="dropdown-menu shadow mt-4">
                             <div class="mega-content px-4">
                                 <div class="container-fluid">
                                 <div class="row py-3">
-                                        <ul class="type-pr col-md-6 col-lg-3 d-flex flex-column">
+                                        <ul class="type-pr col-md-6 col-lg-3 d-flex flex-column mb-3">
                                             <li><h6 class="text-uppercase">Các loại sản phẩm</h6></li>
                                             <li><a href="#" class="dropdown-item">Chăm sóc cơ thể</a></li>
                                             <li><a href="#" class="dropdown-item">Chăm sóc da mặt</a></li>
@@ -102,7 +105,7 @@
                             </div>
                         </li>
                         <li class="drop-cat nav-item dropdown dropdown-mega position-static">
-                            <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Danh mục <span class="text-bg-secondary text-secondary tag">SALE</span></a>
+                            <a class="dropdown-toggle nav-link hvr-hang" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Danh mục <span class="text-bg-secondary text-secondary tag">SALE</span></a>
                             <div class="dropdown-menu shadow mt-4">
                             <div class="mega-content px-4">
                                 <div class="container-fluid">
@@ -205,7 +208,7 @@
                             </div>
                         </li>
                         <li class="drop-pr nav-item dropdown dropdown-mega position-static">
-                            <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-bs-auto-close="outside">Sản phẩm <span class="tag text-success text-bg-success">HOT</span></a>
+                            <a href="#" class="dropdown-toggle nav-link hvr-hang" data-bs-toggle="dropdown" data-bs-auto-close="outside">Sản phẩm <span class="tag text-success text-bg-success">HOT</span></a>
                             <div class="dropdown-menu shadow">
                                 <div class="mega-content">
                                     <div class="container">
@@ -678,7 +681,7 @@
                             </div>
                         </li>
                         <li class="drop-topdeal nav-item dropdown dropdown-mega position-static">
-                            <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Top deals</a>
+                            <a class="dropdown-toggle nav-link hvr-hang" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Top deals</a>
                             <div class="dropdown-menu shadow mt-4">
                             <div class="mega-content px-4">
                                 <div class="container-fluid">
@@ -797,7 +800,7 @@
                             </div>
                         </li>
                         <li class="drop-element nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Khác</a>
+                            <a class="nav-link dropdown-toggle hvr-hang" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Khác</a>
                             <ul class="dropdown-menu shadow">
                                 <li><a href="blog.html" class="dropdown-item">Tin tức - Sự kiện <span class="tag text-secondary text-bg-secondary">NEW</span></a></li>
                                 <li><a href="#" class="dropdown-item">Liên hệ</a></li>
@@ -814,7 +817,7 @@
                     <div class="d-flex ms-auto nav-icon">
                         <ul>
                             <li>
-                                <a href="#search" data-bs-toggle="modal"><i class="fa-solid fa-search"></i></a>
+                                <a href="#search" data-bs-toggle="modal" class="hvr-float-shadow"><i class="fa-solid fa-search"></i></a>
                                 <div class="modal" id="search">
                                     <div class="modal-dialog">
                                     <div class="modal-content">
@@ -829,7 +832,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#mylogin" data-bs-toggle="modal"><i class="fa-solid fa-user"></i></a>
+                                <a href="#mylogin" data-bs-toggle="modal" class="hvr-float-shadow"><i class="fa-solid fa-user"></i></a>
                                 <div class="modal" id="mylogin">
                                     <div class="modal-dialog modal-xl modal-dialog-centered">
                                         <div class="modal-content">
@@ -920,15 +923,14 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                                
+                                <a href="#cart" class="cart-icon hvr-float-shadow"><i class="fa-solid fa-cart-shopping"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="cart-shopping">
+        <div id="cart" class="cart-shopping" tabindex="-1">
             <div class="row border-bottom">
                 <p>Sản phẩm mới thêm</p>
                 <div class="cart-item mb-2">
@@ -965,7 +967,8 @@
             </div>
         </div>
     </header>
-    <div class="banner">
+
+    <div class="banner wow fadeInDownBig">
         <div class="hero_carosel owl-carousel owl-theme">
             <div class="slider-2">
                <div class="hero-img">
@@ -997,10 +1000,11 @@
             </div>
          </div>
     </div>
-    <section class="categories container">
+    <section class="categories container wow bounceInUp"
+             data-wow-duration="1s" data-wow-delay="1s">
         <div class="row">
             <div class="section-title col-12">
-                <h4>Danh mục sản phẩm</h4>
+                <h4 class="">Danh mục sản phẩm</h4>
                 <div class="line"></div>
             </div>
         </div>
@@ -1101,12 +1105,22 @@
     </section>
     <section class="about container mt-5">
         <div class="row">
-            <div class="col-md-6">
-                <div class="about-img">
-                    <img src="images/cmsbanner.jpg" alt="" class="w-100">
+            <div class="col-md-6 wow bounceInLeft" data-wow-duration="1.5s" >
+                <div class="box2" style="overflow: hidden;">
+                    <img class="pic-1" src="images/cmsbanner-600x417.jpg">
+                    <div class="box-content">
+                        <div class="inner-content">
+                            <h3 class="title">BEAUTIFY.</h3>
+                            <span class="post">Chăm sóc cho sắc đẹp của bạn</span>
+                            <ul class="icon">
+                                <li class="text-center"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="text-center"><a href="#"><i class="fa fa-link"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 content">
+            <div class="col-md-6 content wow bounceInRight" data-wow-duration="1.5s">
                 <p class="mt-0">Chào mừng bạn đến với Beautify!</p>
                 <h2 class="mb-0">Uy Tín - Chất Lượng <br>
                     Tạo Nên Sự Bền Vững
@@ -1857,14 +1871,15 @@
     </section>
     <section class="cms-banner container mt-5">
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-6 py-3">
+            <div class="col-lg-3 col-md-6 col-6 py-3 wow slideInLeft">
                 <div class="cms-banner-img">
                     <a href="#"><img src="images/cms01.jpg" alt="" class="w-100"></a>
                     <p>Beautify</p>
                     <h4>Sự lựa chọn của người nổi tiếng</h4>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-6 py-3">
+            <div class="col-lg-3 col-md-6 col-6 py-3 wow slideInLeft"
+                 data-wow-delay="1s">
                 <div class="cms-banner-img">
                     <div class="cms2">
                         <a href="#"><img src="images/cms02.jpg" alt="" class="w-100"></a>
@@ -1873,7 +1888,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-6 py-3">
+            <div class="col-lg-3 col-md-6 col-6 py-3 wow slideInRight"
+                 data-wow-delay="2s">
                 <div class="cms-banner-img">
                     <div class="cms2">
                         <a href="#"><img src="images/cms03.jpg" alt="" class="w-100"></a>
@@ -1884,7 +1900,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-6 py-3">
+            <div class="col-lg-3 col-md-6 col-6 py-3 wow slideInRight"
+                 data-wow-delay="3s">
                 <div class="cms-banner-img">
                     <a href="#"><img src="images/cms04.jpg" alt="" class="w-100"></a>
                     <p>Giảm đến 15%</p>
@@ -2174,16 +2191,17 @@
         </div>
     </section>
     <section class="video container">
-        <h4>Nhận liệu pháp chăm sóc da chuyên sâu</h4>
-        <p>Chúng tôi có một chuyên gia sẵn sàng giúp đỡ bạn với bất kỳ câu trả lời và lời khuyên nào bạn cần
+        <h4 class="wow rotateIn">Nhận liệu pháp chăm sóc da chuyên sâu</h4>
+        <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">Chúng tôi có một chuyên gia sẵn sàng giúp đỡ bạn với bất kỳ câu trả lời và lời khuyên nào bạn cần
             "Mỗi người phụ nữ đều có nét đẹp bí ẩn từ bên trong,
             hãy để nét đẹp ấy được tỏa sáng cùng Allione"
         </p>
-        <div class="btn-more"><button class="btn text-primary">Đọc thêm <i class="fa-solid fa-arrow-right-long"></i></button></div>
+        <div class="btn-more wow bounceInUp"
+        data-wow-duration="2s" data-wow-delay="1.5s"><button class="btn text-primary">Đọc thêm <i class="fa-solid fa-arrow-right-long"></i></button></div>
         <div class="video-img">
             <img src="images/video2.png" alt="">
             <button id="play" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myPlay">
-                <img src="images/play.png" alt="">
+                <img src="images/play.png" alt="" class="wow pulse">
             </button>
             <!-- The Modal -->
             <div class="modal" id="myPlay">
@@ -2211,7 +2229,7 @@
         <h4>Quy trình chăm sóc da trong 4 bước</h4>
         <div class="row">
             <div class="col-6 col-lg-3 text-center procedure dash">
-                <ul>
+                <ul class="wow fadeInDown">
                     <li class="step bg-step1">Bước 1</li>
                     <li class="tut-img">
                         <img src="images/drop.png" alt="" class="img1">
@@ -2222,7 +2240,7 @@
                 </ul>
             </div>
             <div class="col-6 col-lg-3 text-center procedure dash ">
-                <ul>
+                <ul class="wow fadeInDown" data-wow-delay="1s">
                     <li class="step bg-step2">Bước 2</li>
                     <li class="tut-img">
                         <img src="images/serum.png" alt="" class="img1">
@@ -2234,7 +2252,7 @@
                 </ul>
             </div>
             <div class="col-6 col-lg-3 text-center procedure dash">
-                <ul>
+                <ul class="wow fadeInDown" data-wow-delay="2s">
                     <li class="step bg-step3">Bước 3</li>
                     <li class="tut-img">
                         <img src="images/facial-mask.png" alt="" class="img1">
@@ -2246,7 +2264,7 @@
                 </ul>
             </div>
             <div class="col-6 col-lg-3 text-center procedure">
-                <ul>
+                <ul class="wow fadeInDown" data-wow-delay="3s">
                     <li class="step bg-step4">Bước 4</li>
                     <li class="tut-img">
                         <img src="images/sun.png" alt="" class="img1">
@@ -2502,7 +2520,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="jquery.flipper-responsive.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

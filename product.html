@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/zoom.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -38,15 +39,15 @@
                 <div class="collapse navbar-collapse" id="navbar-content">
                     <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                            <a class="nav-link active hvr-hang" aria-current="page" href="index.html">Trang chủ</a>
                         </li>
                         <li class="drop-shop nav-item dropdown dropdown-mega position-static">
-                            <a class="nav-link dropdown-toggle" href="shop.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Cửa hàng</a>
+                            <a class="nav-link dropdown-toggle hvr-hang" href="shop.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Cửa hàng</a>
                             <div class="dropdown-menu shadow mt-4">
                             <div class="mega-content px-4">
                                 <div class="container-fluid">
                                 <div class="row py-3">
-                                        <ul class="type-pr col-md-6 col-lg-3 d-flex flex-column">
+                                        <ul class="type-pr col-md-6 col-lg-3 d-flex flex-column mb-3">
                                             <li><h6 class="text-uppercase">Các loại sản phẩm</h6></li>
                                             <li><a href="#" class="dropdown-item">Chăm sóc cơ thể</a></li>
                                             <li><a href="#" class="dropdown-item">Chăm sóc da mặt</a></li>
@@ -103,7 +104,7 @@
                             </div>
                         </li>
                         <li class="drop-cat nav-item dropdown dropdown-mega position-static">
-                            <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Danh mục <span class="text-bg-secondary text-secondary tag">SALE</span></a>
+                            <a class="dropdown-toggle nav-link hvr-hang" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Danh mục <span class="text-bg-secondary text-secondary tag">SALE</span></a>
                             <div class="dropdown-menu shadow mt-4">
                             <div class="mega-content px-4">
                                 <div class="container-fluid">
@@ -206,7 +207,7 @@
                             </div>
                         </li>
                         <li class="drop-pr nav-item dropdown dropdown-mega position-static">
-                            <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-bs-auto-close="outside">Sản phẩm <span class="tag text-success text-bg-success">HOT</span></a>
+                            <a href="#" class="dropdown-toggle nav-link hvr-hang" data-bs-toggle="dropdown" data-bs-auto-close="outside">Sản phẩm <span class="tag text-success text-bg-success">HOT</span></a>
                             <div class="dropdown-menu shadow">
                                 <div class="mega-content">
                                     <div class="container">
@@ -679,7 +680,7 @@
                             </div>
                         </li>
                         <li class="drop-topdeal nav-item dropdown dropdown-mega position-static">
-                            <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Top deals</a>
+                            <a class="dropdown-toggle nav-link hvr-hang" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Top deals</a>
                             <div class="dropdown-menu shadow mt-4">
                             <div class="mega-content px-4">
                                 <div class="container-fluid">
@@ -798,7 +799,7 @@
                             </div>
                         </li>
                         <li class="drop-element nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Khác</a>
+                            <a class="nav-link dropdown-toggle hvr-hang" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Khác</a>
                             <ul class="dropdown-menu shadow">
                                 <li><a href="blog.html" class="dropdown-item">Tin tức - Sự kiện <span class="tag text-secondary text-bg-secondary">NEW</span></a></li>
                                 <li><a href="#" class="dropdown-item">Liên hệ</a></li>
@@ -815,7 +816,7 @@
                     <div class="d-flex ms-auto nav-icon">
                         <ul>
                             <li>
-                                <a href="#search" data-bs-toggle="modal"><i class="fa-solid fa-search"></i></a>
+                                <a href="#search" data-bs-toggle="modal" class="hvr-float-shadow"><i class="fa-solid fa-search"></i></a>
                                 <div class="modal" id="search">
                                     <div class="modal-dialog">
                                     <div class="modal-content">
@@ -830,7 +831,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#mylogin" data-bs-toggle="modal"><i class="fa-solid fa-user"></i></a>
+                                <a href="#mylogin" data-bs-toggle="modal" class="hvr-float-shadow"><i class="fa-solid fa-user"></i></a>
                                 <div class="modal" id="mylogin">
                                     <div class="modal-dialog modal-xl modal-dialog-centered">
                                         <div class="modal-content">
@@ -921,15 +922,14 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                                
+                                <a href="#cart" class="cart-icon hvr-float-shadow"><i class="fa-solid fa-cart-shopping"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="cart-shopping">
+        <div id="cart" class="cart-shopping" tabindex="-1">
             <div class="row border-bottom">
                 <p>Sản phẩm mới thêm</p>
                 <div class="cart-item mb-2">
@@ -965,8 +965,9 @@
                 </div>
             </div>
         </div>
+    </header>
 
-        <div class="bg-light py-4">
+    <div class="bg-light py-4">
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
             <li class="breadcrumb-item"><a href="shop.html">Cửa hàng</a></li>
@@ -975,8 +976,7 @@
             <li class="breadcrumb-item active">Laneige Glowy Makeup Serum 30ml</li>
         </ul>
         <h4 class="text-center">Laneige Glowy Makeup Serum 30ml</h4>
-        </div>
-    </header>
+    </div>
     
     <main class="mt-5 container">
         <div class="row info">

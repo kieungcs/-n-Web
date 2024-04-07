@@ -119,7 +119,7 @@ a
 }
 .dropdown-menu h6 {color: #6c757d; font-size: 14px; text-transform: uppercase;}
 .dropdown-menu a {padding: 0px;}
-.drop-element a {padding: 7px;}
+.drop-element .dropdown-item {padding: 7px;}
 .type-pr li a {padding: 0;}
 .only-here li a {padding: 0;}
 .dropdown-menu {line-height: 26px; font-size: 14px;}
@@ -399,6 +399,7 @@ a
     margin-top: 10px;
     max-width: 300px;
 }
+.active {display: block;}
 .cart-shopping p {color: #777;}
 .cart-shopping .cart-item
 {
@@ -615,11 +616,6 @@ a
     overflow: hidden;
     border-radius: 25px;
     margin-bottom: 10px;
-}
-.about .about-img:hover img
-{
-    transform: scale(1.2);
-    transition: all 0.5s ease-out;
 }
 /* product */
 .product .nav
@@ -895,18 +891,43 @@ a
     color: #777;
 }
 .tutorial .procedure {padding: 15px 12px;}
-/* .tutorial .dash {position: relative;}
-.tutorial .dash::after
+.tutorial .dash {position: relative;}
+/* .tutorial .dash::after
 {
     content: "---------------------";
     position: absolute;
     top: 15px; right: -75px;
 } */
+.dash:nth-child(1)::after
+{
+    content: "-----------------";
+    position: absolute;
+    top: 15px; right: -75px;
+}
+.dash:nth-child(2)::after
+{
+    content: "-----------------";
+    position: absolute;
+    top: 15px; right: -75px;
+}
+.dash:nth-child(3)::after
+{
+    content: "-----------------";
+    position: absolute;
+    top: 15px; right: -75px;
+}
 .bg-step1 {background-color: #DDB4A8;}
 .bg-step2 {background-color: #C88F7E;}
 .bg-step3 {background-color: #995F4D;}
 .bg-step4 {background-color: #703523;}
-
+@media screen and (max-width: 991px) {
+    .dash:nth-child(2)::after
+{
+    content: "";
+    position: absolute;
+    top: 15px; right: -75px;
+}
+}
 /* BLOG */
 .blog .blog-slide .item .blog-img {border-radius: 0;}
 .blog .blog-slide .item .blog-img .date

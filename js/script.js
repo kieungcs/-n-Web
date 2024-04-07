@@ -1,3 +1,4 @@
+
 $('.drop-pr').click(function(){
    
     $('.nav-prtab').owlCarousel({
@@ -23,9 +24,31 @@ $('.drop-shop').click(function(){
     $('#d-img2').height(bannerh)
 })
 //TOGGLE CART-SHOPPING
-$('#cart').click(function(){
-    $('.cart-shopping').toggle('blind')
-})
+$('.cart-icon').on('click', function () {
+    $(this.hash).toggleClass('active').focus();
+  });
+  
+  $('#cart').on({
+    focusout: function () {
+      $(this).data('timer', setTimeout(function () {
+        $(this).removeClass('active');
+      }.bind(this), 0));
+    },
+    focusin: function () {
+      clearTimeout($(this).data('timer'));
+    }
+  });
+  
+  $('.cart-icon').on({
+    focusout: function () {
+      $(this.hash).data('timer', setTimeout(function () {
+        $(this.hash).removeClass('active');
+      }.bind(this), 0));
+    },
+    focusin: function () {
+      clearTimeout($(this.hash).data('timer'));  
+    }
+  });
 // TOGGLE FILTER
 $('.filter-icon').click(function(){
     $('.aside').toggle('drop')
@@ -349,3 +372,5 @@ $('#btnplus').click(function(){
     $('#quanty').val(quanty);
   })
 
+
+  new WOW().init();
