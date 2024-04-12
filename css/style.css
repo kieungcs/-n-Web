@@ -1455,11 +1455,6 @@ a
     transition: all 0.5s ease-in-out;
 }
 .shop-pr:hover .pr-btn{margin-top: -45px; opacity: 1;transition: all 0.3s ease-out}
-.shop-main .pagination .page-item .page-link.active
-{
-    background-color: none;
-    border-bottom: 2px solid #047103;
-}
 .shop-pr-line .star i{
     color: #F7BB03;
 }

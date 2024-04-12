@@ -4801,6 +4801,7 @@ textarea.form-control-lg {
   color: #047103;
   background-color:none;
   border-color: none;
+  border-bottom: 2px solid #047103;
 }
 .page-link.disabled, .disabled > .page-link {
   color: var(--bs-pagination-disabled-color);
